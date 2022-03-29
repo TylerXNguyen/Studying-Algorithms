@@ -1,0 +1,42 @@
+Source:
+https://blog.reviewnb.com/github-jupyter-notebook/
+
+Correct directory
+>> cd C:\Users\tyler\OneDrive\Documents\Studying Algorithms
+
+Clone Repository
+
+>> git clone https://github.com/amit1rrr/projectA.git
+    Cloning into 'projectA'...
+    warning: You appear to have cloned an empty repository.
+
+
+
+Push Notebooks to GitHub
+
+    # Copy notebooks
+    >> cp /some/path/analysis1.ipynb /path/of/projectA/
+    >> cp /some/path/scratch.ipynb /path/of/projectA/
+
+    # Push analysis1.ipyn to github
+    git add analysis1.ipynb
+    
+    # Use git status to check status of changes
+    
+    # Commits the "Changes to be committed" files
+    # -m is the message
+    git commit -m "Adds customer data analysis notebook"
+    
+    # push checkpoint to github
+    # git push
+    
+    
+Develop in a Branch
+
+    # Create new branch
+    >> git checkout -b customer_data_insights
+    
+    # Push branch by copying error message
+    >> git push --set-upstream origin customer_data_insights
+    
+    
